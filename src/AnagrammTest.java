@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class AnagrammTest
 {
@@ -26,8 +23,11 @@ public class AnagrammTest
     {
 
 
-        List<Character> charList1 = fromStringToCharList(word1);
-        List<Character> charList2 = fromStringToCharList(word2);
+        String wordOne = word1.toLowerCase();
+        String wordTwo = word2.toLowerCase();
+
+        List<Character> charList1 = fromStringToCharList(wordOne);
+        List<Character> charList2 = fromStringToCharList(wordTwo);
 
         Collections.sort(charList1);
         Collections.sort(charList2);
