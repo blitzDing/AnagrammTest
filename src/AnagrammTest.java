@@ -15,8 +15,7 @@ public class AnagrammTest
         String word1 = args[0];
         String word2 = args[1];
 
-        if(isAnagramOf(word1, word2))System.out.println("Die beiden worte sind Anagramme!");
-        else System.out.println("Die beiden worte sind keine Anagramme!");
+        System.out.println(isAnagramOf(word1, word2));
     }
 
     public static boolean isAnagramOf(String word1, String word2)
