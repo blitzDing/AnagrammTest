@@ -23,8 +23,8 @@ public class AnagrammTest
     {
 
 
-        String wordOne = word1.toLowerCase();
-        String wordTwo = word2.toLowerCase();
+        String wordOne = word1.toLowerCase().trim();
+        String wordTwo = word2.toLowerCase().trim();
 
         List<Character> charList1 = fromStringToCharList(wordOne);
         List<Character> charList2 = fromStringToCharList(wordTwo);
